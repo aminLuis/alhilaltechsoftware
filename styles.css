@@ -223,32 +223,40 @@ a {
     text-align: center;
 }
 
-.portfolio-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Sección de Portafolio */
+.portfolio-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
 }
 
-.portfolio-item {
-    background: #333;
-    color: #fff;
-    padding: 50px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 30%;
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.portfolio-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-    .portfolio-item {
-        width: 80%;
-        margin: 10px auto;
-    }
+/* Botón de Portafolio */
+.portfolio-button {
+    display: inline-block;
+    background: #6a0dad;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.portfolio-button:hover {
+    background: #4a097d;
+    transform: scale(1.05);
 }
 
 .contact {
