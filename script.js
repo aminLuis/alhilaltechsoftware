@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-
 // Efecto de desplazamiento suave para los enlaces del menú
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
