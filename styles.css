@@ -417,3 +417,84 @@ section.visible {
     height: 5rem;
     border-radius: .3rem; 
 }
+
+.loader {
+    display: none;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Sección de Descripción de Servicios */
+.service-description {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.service-description h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de artículos */
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada tarjeta de servicio */
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #6a0dad; /* Puedes ajustar el color a tu paleta */
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Efecto hover */
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .service-item {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

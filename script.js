@@ -68,6 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
+        const submitButton = document.getElementById("submit-button");
+        const loader = submitButton.querySelector(".loader");
+
+        // Deshabilita el botón y muestra el loader
+        submitButton.disabled = true;
+        loader.style.display = "inline-block";
+
         emailjs.send("service_zjrqq6i", "template_o6hppf6", {
             to_name: document.getElementById("to_name").value,
             from_name: document.getElementById("from_name").value,
@@ -77,6 +84,11 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("contact-form").reset();
         }, function (error) {
             alert("Error al enviar el mensaje: " + JSON.stringify(error));
+        })
+        .finally(() => {
+            // Oculta el loader y habilita el botón nuevamente
+            loader.style.display = "none";
+            submitButton.disabled = false;
         });
     });
 });

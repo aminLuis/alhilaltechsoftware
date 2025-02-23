@@ -55,6 +55,31 @@
         </div>
     </section>
 
+    <section id="descripcion-servicios" class="service-description">
+        <h2>¿Qué es el Desarrollo Digital?</h2>
+        <div class="service-items">
+            <article class="service-item">
+                <h3>Desarrollo Web</h3>
+                <p>
+                    El desarrollo web consiste en crear y mantener sitios y aplicaciones en Internet, utilizando lenguajes y tecnologías modernas para garantizar un diseño responsivo, accesible y seguro. Se enfoca en brindar experiencias de usuario atractivas y funcionales.
+                </p>
+            </article>
+            <article class="service-item">
+                <h3>Desarrollo Móvil</h3>
+                <p>
+                    El desarrollo móvil implica la creación de aplicaciones para dispositivos inteligentes como smartphones y tablets. Se destacan la optimización de interfaces y la integración de funcionalidades específicas del hardware, garantizando un rendimiento eficiente y una experiencia de usuario fluida.
+                </p>
+            </article>
+            <article class="service-item">
+                <h3>Software Corporativo Robusto</h3>
+                <p>
+                    Este servicio abarca la creación de soluciones empresariales a medida que optimizan procesos internos, gestionan datos de forma segura y mejoran la eficiencia operativa. Se prioriza la escalabilidad, seguridad y robustez, adaptándose a las necesidades específicas de cada organización.
+                </p>
+            </article>
+        </div>
+    </section>
+    
+
     <section id="sobre-nosotros" class="about">
         <h2>Sobre Nosotros</h2>
         <div class="about-content">
@@ -98,14 +123,14 @@
     </section>
     
 
-    <section id="portafolio" class="portfolio">
+    <!-- <section id="portafolio" class="portfolio">
         <h2>Portafolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">Proyecto 1</div>
             <div class="portfolio-item">Proyecto 2</div>
             <div class="portfolio-item">Proyecto 3</div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contacto" class="contact">
         <h2>Contacto</h2>
@@ -113,7 +138,10 @@
             <input type="text" id="to_name" placeholder="Nombre" required>
             <input type="email" id="from_name" placeholder="Correo Electrónico" required>
             <textarea id="message" placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <button id="submit-button" type="submit">
+                Enviar
+                <span class="loader"></span>
+            </button>
         </form>
         <p id="success-message" style="display: none; color: green;">¡Mensaje enviado con éxito!</p>
     </section>
