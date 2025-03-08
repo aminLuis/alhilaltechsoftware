@@ -487,6 +487,7 @@ section.visible {
     width: 30%;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .service-item h3 {
