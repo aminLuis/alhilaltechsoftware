@@ -130,6 +130,11 @@ a {
     margin-top: 3rem;
 }
 
+.hero-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -215,6 +220,9 @@ a {
     .hero-content {
         text-align: center;
         width: 90%;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
     }
 }
 
